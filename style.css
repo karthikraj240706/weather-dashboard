@@ -309,3 +309,21 @@ input{
     }
 
 }
+.menu-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+#clearHistory{
+    background:none;
+    border:none;
+    color:#6aa8ff;
+    cursor:pointer;
+    font-size:14px;
+}
+
+#clearHistory:hover{
+    color:white;
+}
