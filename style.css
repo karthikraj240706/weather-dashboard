@@ -1,0 +1,18 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Inter,sans-serif;
+}
+
+body{
+    background:#0d0d16;
+    color:white;
+    min-height:100vh;
+}
+
+.container{
+    display:grid;
+    grid-template-columns:280px 1fr;
+    min-height:100vh;
+}
