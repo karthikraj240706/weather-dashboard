@@ -11,6 +11,8 @@ const pressure = document.getElementById("pressure");
 const feelsLike = document.getElementById("feelsLike");
 
 const weatherIcon = document.getElementById("weatherIcon");
+const historyList = document.getElementById("historyList");
+const clearHistory = document.getElementById("clearHistory");
 
 async function getWeather(city){
 
