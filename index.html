@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atmos | Live Weather</title>
+
+    <title>Atmos | Weather Dashboard</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,19 +16,162 @@
 
 <body>
 
-    <div class="container">
+<div class="container">
 
-        <aside class="sidebar">
+    <aside class="sidebar">
 
-        </aside>
+        <div class="logo">
 
-        <main class="content">
+            <h1>Atmos</h1>
 
-        </main>
+            <p>Live Weather Dashboard</p>
 
-    </div>
+        </div>
+
+        <div class="menu">
+
+            <h3>Recent Searches</h3>
+
+            <ul id="historyList">
+
+                <li>Hyderabad</li>
+
+                <li>Delhi</li>
+
+                <li>Mumbai</li>
+
+            </ul>
+
+        </div>
+
+        <div class="status">
+
+            <p>System Status</p>
+
+            <div class="online">
+
+                <span class="circle"></span>
+
+                <span>Ready</span>
+
+            </div>
+
+        </div>
+
+    </aside>
+
+    <main class="main">
+
+        <header>
+
+            <div>
+
+                <h2 id="currentDay">Monday</h2>
+
+                <p id="currentDate">20 July 2026</p>
+
+            </div>
+
+            <div class="search">
+
+                <input
+                    type="text"
+                    id="cityInput"
+                    placeholder="Search city..."
+                >
+
+                <button id="searchBtn">
+
+                    Search
+
+                </button>
+
+            </div>
+
+        </header>
+
+        <section class="hero">
+
+            <div class="temperature-card">
+
+                <div>
+
+                    <h1 id="temp">
+
+                        --°
+
+                    </h1>
+
+                    <h3 id="cityName">
+
+                        Search a city
+
+                    </h3>
+
+                    <p id="description">
+
+                        Weather information will appear here.
+
+                    </p>
+
+                </div>
+
+                <div>
+
+                    <img
+                        id="weatherIcon"
+                        src="https://openweathermap.org/img/wn/01d@2x.png"
+                        alt="Weather Icon"
+                    >
+
+                </div>
+
+            </div>
+
+            <div class="details">
+
+                <div class="card">
+
+                    <h4>Humidity</h4>
+
+                    <p id="humidity">--%</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h4>Wind</h4>
+
+                    <p id="wind">-- km/h</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h4>Pressure</h4>
+
+                    <p id="pressure">-- hPa</p>
+
+                </div>
+
+                <div class="card">
+
+                    <h4>Feels Like</h4>
+
+                    <p id="feelsLike">--°</p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
 
 <script src="api.js"></script>
+
 <script src="script.js"></script>
 
 </body>
